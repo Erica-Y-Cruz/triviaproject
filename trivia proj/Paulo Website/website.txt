@@ -1,0 +1,200 @@
+<!-- Fig. 2.4: contact.html -->
+<!-- Linking to an e-mail address. -->
+<html>
+<head>
+ <head>
+      <meta charset = "utf-8">
+      <title>Skew</title>
+      <style type = "text/css">
+         .skew .textbox 
+         {
+            margin-left: 75px;
+            background: skyblue;
+            height: 100px;
+            width: 200px;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 250%;
+            border: 3px solid DarkGreen;
+            border-radius:15px;
+            -webkit-animation: skew 3s infinite linear;
+            -moz-animation: skew 3s infinite linear;
+            animation: skew 3s infinite linear;
+         }
+         @-webkit-keyframes skew 
+         {
+            from { -webkit-transform: skewX(0deg); }
+            25% { -webkit-transform: skewX(45deg); }
+            50% { -webkit-transform: skewX(0); }
+            75% { -webkit-transform: skewX(-45deg); }
+            to { -webkit-transform: skewX(0); }
+         }
+         @-moz-keyframes skew 
+         {
+            from { -moz-transform: skewX(0deg); }
+            25% { -moz-transform: skewX(45deg); }
+            50% { -moz-transform: skewX(0); }
+            75% { -moz-transform: skewX(-45deg); }
+            to { -moz-transform: skewX(0); }
+         }
+         @-keyframes skew 
+         {
+            from { transform: skewX(0deg); }
+            25% { transform: skewX(45deg); }
+            50% { transform: skewX(0); }
+            75% { transform: skewX(-45deg); }
+            to { transform: skewX(0); }
+         }
+      </style>
+   </head>
+   		<body><!--Skew Box-->
+     
+      
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div {
+  background-color: lightgrey;
+  width: 1000px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+body  {
+  background-image: url("paper.gif");
+  background-color: #cccccc;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {text-align: center; font-size: 50px}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+<body>
+   <head>
+      <meta charset = "utf-8">
+      <title>Contact Page</title>
+   </head>
+
+   <body>
+      <h1><img src = "paulo_tuazon.jpg" width = "276" height = "360"
+	 alt = "Paulo Tuazon"></h1>    
+      <h1>Paulo Tuazon</h1>
+      <h2><div>I am a UHD student that will graduate in Spring 2022. I'm in CompSci and I'm eager to get into the tech industry
+	  where I hope to get my career in. My hobbies include going out with some friends, playing some video games, watching shows,
+	  and car stuff. I used to work full-time as a Field Technician for a contracting IT job that goes out to school distrcits and installs new computers.
+	  I figure with this much experience, I am able to use it as a "launchpad" so to speak for my career into IT! Below is my linkedin page, hoping to
+          build up my portfolio! Also, please give me full credit for this homework! Thank you! Also, I know that this assignment requires 200 words, so
+	  if somehow I can keep typing more words to fill in the word count limit, like this kind of sentenance, I should be able to hit it no problem. 
+          I'll type my favorite quote, "The quick brown fox jumps over the lazy dog" that sentenance uses all the letters of the alphabet! There! That should
+          be about 200 words!</div>
+      <p>
+      <p><a href = "https://www.linkedin.com/in/paulo-tuazon-3b54549b/">linkedin</a></p>
+      </p>
+      </p>
+      
+<civ class = "box skew">    
+<p style = "font-size: 10pt; color: cyan;">
+<em>The list of cars I've owned</em>
+</p>
+      <!-- create an unordered list -->
+      <ul>
+         <li>
+            Toyota/Lexus:
+
+            <!-- this starts a nested unordered list, which uses a -->
+            <!-- different bullet. The list ends when you -->
+            <!-- close the <ul> tag. -->
+            <ul>
+               <li>2000 Toyota Celica GT-S</li>
+               <li>2000 Toyota Tundra
+
+                  <!-- nested ordered list -->
+                  <ol>
+                     <li>4x4</li>
+                     <li>2UZFE V8</li>
+                  </ol>
+                <li>2003 Lexus IS300
+                  <ol>
+		     <li>2JZ-GE</li>
+		     <li>W55 Transmission</li>
+		  </ol>
+               </li> <!-- ends line 27 new applications li-->
+ 	     </ul>
+            </li>
+               
+         <li>Subaru</li>
+            <ul>
+		<li>1995 Subaru Impreza L AWD</li>
+	        <li>2007 Subaru Impreza Outback Sport</li>
+		<li>2005 Subaru Outback 2.5XT</li>
+	    </ul>  
+      </ul> <!-- ends the unordered list of line 15 -->
+
+<head>
+      <meta charset = "utf-8">
+      <title>A simple HTML5 table</title>
+   </head>
+
+   <body>
+      <!-- the <table> tag opens a table -->
+      <table border = "1">
+
+         <!-- the <caption> tag summarizes the table's -->
+         <!-- contents (this helps visually impaired people) -->
+         <caption><strong>Gaming PC Parts(1st column) and 
+		    their Prices (2nd column)</strong></caption>
+
+         <!-- the <thead> section appears first in the table -->
+         <!-- it formats the table header area -->
+         <thead>
+            <tr> <!-- <tr> inserts a table row -->
+               <th>Parts</th> <!-- insert a heading cell -->
+               <th>Price</th>
+            </tr>
+         </thead>
+
+         <!-- the <tfoot> section appears last in the table -->
+         <!-- it formats the table footer -->
+         <tfoot>
+            <tr>
+               <th>Total</th>
+               <th>$3.75</th>
+            </tr>
+         </tfoot>
+
+         <!-- all table content is enclosed -->
+         <!-- within the <tbody> -->
+         <tbody>
+            <tr>
+               <td>Nvidia RTX 3080</td> <!-- insert a data cell -->
+               <td>$499.99</td>
+            </tr>
+            <tr>
+               <td>AMD Ryzen 5 3800k</td>
+               <td>$399.99</td>
+            </tr>
+            <tr>
+               <td>HyperX Flight S</td>
+               <td>$100</td>
+            </tr>
+            <tr>
+               <td>MSI Gaming Carbon WIFI X570 Motherboard</td>
+               <td>$268.00</td>
+            </tr>
+            <tr>
+              <td>G. Skill DDR4 RGB 4x8 32GB</td>
+	      <td>$110</td>
+         </tbody>
+      </table>
+       <civ class = "box skew">
+      <civ class = "textbox">The end!</civ>
+    </civ>
+
+   </body>
+</html>
+
+<!--

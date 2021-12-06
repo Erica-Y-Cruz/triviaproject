@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.1: main.html -->
+<!-- First HTML5 example. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Welcome</title>
+      <style type = "text/css">
+      div
+      {
+         width: 200px;
+         height: 200px;
+         background-color: darkolivegreen;
+         box-shadow: 25px 25px 50px dimgrey;
+         float: left;
+         margin-right: 120px;
+         margin-top: 40px;
+      }
+         img 
+         {
+            position: relative;
+            -webkit-animation: movingimage linear 10s 1s 2 alternate;
+            -moz-animation: movingimage linear 10s 1s 2 alternate;
+            animation: movingimage linear 10s 1s 2 alternate;
+         }
+         @-webkit-keyframes movingimage 
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+         @-moz-keyframes movingimage 
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+         @keyframes movingimage
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+ 	</style>
+   </head>
+
+   <body>
+ 	<h1 style = "font-style: italic; font-size: 25pt; color:darkred;"> An Introduction to Crystal Dowd</h1>
+	 <div><h2>
+      <ul>
+         <!-- the list contains four list items -->
+         <li><a href = "http://www.youtube.com">YouTube</a></li>
+         <li><a href = "http://www.amazon.com">Amazon</a></li>
+         <li><a href = "http://www.linkedin.com">LinkedIn</a></li>
+       </ul>
+<img src = "UHD.png" width = "200" height = "150"></p>
+</h2></div>
+      <h2>A UHD student</h2>
+	
+      <p style = "font-size: 14pt; color: darkolivegreen;">
+	
+	Hi there! I am 23 years old, and I am a computer science major with a minor in math. This is my last year of college. I will be graduating in May 2022. I chose this major because I was influenced by my father who taught himself how to program, although he majored in mechanical engineering while he was in school. I have taken an interest in web development, and cannot wait to learn more, as I have a few people who would like me to build websites for them in the future. HTML5 has been an interesting language to learn thus far, it is different from other programming languages I’ve learned. I would like to learn more programming languages related to web development to increase mt knowledge. I also enjoy learning Python and Java. Besides programming, I also enjoy learning about different cultures and languages. I am currently teaching myself French and brushing up on my American sign language skills that I learned in high school. I hope to travel to France next year and utilize what French I will know by then, and hopefully travel to surrounding countries afterwards. It will be my graduation present from my parents. I love finding new restaurants to eat at, so below is a link to Foursquare! </p>
+
+      <p><a href = "http://www.fourquare.com">Foursquare</a></p>
+      
+	<p>
+         <img src = "Me.JPG" width = "102" height = "140"></p>
+                   
+
+
+
+
+
+      <!-- the <table> tag opens a table -->
+      <table border = "1">
+
+         <!-- the <caption> tag summarizes the table's -->
+         <!-- contents (this helps visually impaired people) -->
+         <caption><strong>Table of Languages I'm Interested In</strong></caption>
+
+         <!-- the <thead> section appears first in the table -->
+         <!-- it formats the table header area -->
+         <thead>
+            <tr> <!-- <tr> inserts a table row -->
+               <th>Programming</th> <!-- insert a heading cell -->
+               <th>Cultural</th>
+            </tr>
+         </thead>
+
+         <!-- the <tfoot> section appears last in the table -->
+         <!-- it formats the table footer -->
+         <tfoot>
+            <tr>
+               <th></th>
+               <th></th>
+            </tr>
+         </tfoot>
+
+         <!-- all table content is enclosed -->
+         <!-- within the <tbody> -->
+         <tbody>
+            <tr>
+               <td>Java</td> <!-- insert a data cell -->
+               <td>ASL</td>
+            </tr>
+            <tr>
+               <td>Python</td>
+               <td>French</td>
+            </tr>
+            <tr>
+               <td>HTML5</td>
+               <td>Spanish</td>
+            </tr>
+            <tr>
+               <td>Javascript</td>
+               <td>Tagalog</td>
+            </tr>
+         </tbody>
+      </table>
+
+
+
+      <p>Please fill out this form to help 
+         us improve our site.</p>
+      <form method = "post" action = "http://www.deitel.com">
+         <!-- <input type = "text"> inserts a text field -->
+         <p><label>Name:
+               <input name = "name" type = "text" size = "25"
+                  maxlength = "30">
+            </label></p>
+  
+         <p>
+            <!-- input types "submit" and "reset" insert -->
+            <!-- buttons for submitting and clearing the -->
+            <!-- form's contents, respectively -->
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+         </p>   
+      </form>
+   </body>
+</html>
+
+<!--
